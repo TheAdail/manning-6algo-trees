@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Nary_Node_2
+namespace Nary_Node_1
 {
     class Program
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nary_Node_2
+namespace Nary_Node_1
 {
     public class NaryNode<T>
     {

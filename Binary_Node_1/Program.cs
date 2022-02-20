@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Binary_Node_2
+namespace Binary_Node_1
 {
     class Program
     {

@@ -26,11 +26,6 @@ namespace Binary_Node_2
             RightChild = child;
         }
 
-        public String ValueOrNone(BinaryNode<T> node, int level)
-        {
-            return node == null ? "None" : node.ToString(level);
-        }
-
         public override String ToString()
         {
             return this.ToString(0);
