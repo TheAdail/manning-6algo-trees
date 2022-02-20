@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Binary_Node_1
+namespace Binary_Node_2
 {
     public class BinaryNode<T>
     {

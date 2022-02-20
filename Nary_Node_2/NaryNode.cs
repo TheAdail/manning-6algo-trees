@@ -6,6 +6,7 @@ namespace Nary_Node_2
 {
     public class NaryNode<T>
     {
+        internal static String Indentation = "  ";
         internal T Value;
         internal List<NaryNode<T>> Children;
 
@@ -34,12 +35,19 @@ namespace Nary_Node_2
             Children.Add(node);
         }
 
-        public override string ToString()
+        public override String ToString()
         {
+            return this.ToString(0);
+        }
+
+        public string ToString(int level)
+        {
+            string baseIndentation = level > 0 ? new StringBuilder("").Insert(0, Indentation, level).ToString() : "";
+            string result = $"{baseIndentation}{this.Value}:\n";
             StringBuilder list = new StringBuilder();
-            foreach(NaryNode<T> child in Children)
-                list.Append($"{child.Value} ");
-            return $"{Value}: {list}";
+            foreach (NaryNode<T> child in Children)
+                list.Append(child.ToString(level+1));
+            return result + list.ToString();
         }
 
     }
